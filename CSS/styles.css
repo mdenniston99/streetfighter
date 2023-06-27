@@ -1,0 +1,266 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/street-back.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Change min-height to 100% */
+}
+header {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header img {
+  height: 80px;
+  width: 10%;
+}
+/*nav */
+nav {
+  color: #fff;
+  text-align: center;
+  background-color: black;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: rgb(189, 92, 92);
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+}
+h6 {
+  font-family: Poppins;
+  font-size: 1.3em;
+}
+/* id and class */
+
+#evo {
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+#protour {
+  font-family: fantasy;
+}
+.evologo {
+  height: 200px;
+  display: block;
+  margin: auto auto;
+  width: 10%;
+}
+.protourlogo {
+  height: 350px;
+  display: block;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto auto;
+  margin-top: 4px;
+}
+.honda {
+  width: auto;
+}
+.blanka {
+  width: auto;
+}
+.ryuken {
+  width: auto;
+}
+.chunli {
+  width: auto;
+}
+.akuma {
+  width: auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.content {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgb(0, 0, 0, 0.25), 0 10px 10px rgb(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background: #632424;
+}
+.content:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+.column-container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+.column-2 {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.column iframe {
+  width: 100%;
+}
+
+/* main content */
+main {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+main p {
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: auto;
+
+  color: black;
+}
+main ul {
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+main ul li {
+  list-style: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  font-family: fantasy;
+}
+button {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: black;
+  background-color: #632424;
+}
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #050505;
+  color: #fffdfd;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    flex: 0 0 100%;
+  }
+
+  .column-container {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 0 0 100%;
+  }
+}
